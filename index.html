@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ucapan</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Hallo Apa Kabar</h1>
+    <p>Masukkan nama kamu dibawah ini</p>
+    <form id="greetingForm">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        <button type="submit">Klik Disini</button>
+    </form>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="popup-message">
+            <h2>Selamat Sidangnya, <span id="popup-name"></span>!</h2>
+            <img id="popup-image" src="buhe.jpg" alt="Foto Pengirim">
+        </div>
+        <h1>Congratulation !!!</h1>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
